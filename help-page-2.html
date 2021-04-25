@@ -1,0 +1,131 @@
+<!-- localstorage -->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles-2.css">
+
+    <title>Registration Form</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body>
+    <div class="container">
+        <form>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">First Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-25">
+                    <label for="gender">Gender</label>
+                </div>
+                <div class="col-75">
+                    <select id="gender" name="gender">
+                        <option value="australia">Gender</option>
+                        <option value="australia">Female</option>
+                        <option value="canada">Male</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">Age</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="age" name="age" placeholder="Age"></input>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-25">
+                    <label for="skills">Choose your skill/skills</label>
+                </div>
+                <div class="col-75">
+                    <input type="Checkbox" name="cooking" value="yes">Cooking (Rs. 100 per hour)
+                    <br><br>
+                    <input type="Checkbox" name="cleaning" value="yes">Cleaning (Rs. 100 per hour)
+                    <br><br>
+                    <input type="Checkbox" name="Nursing" value="yes">Nursing (Rs. 200 per hour)
+                </div>
+            </div>
+
+            <br>
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">Phone number</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="phone" name="phone" placeholder="Phone number"></input>
+                </div>
+            </div>
+
+            <div class="row">
+              <br><br>
+              <center>
+                <a href="help-page-3.html" >Submit</a>
+              </center>
+            </div>
+        </form>
+    </div>
+    <!-- <script>
+        let helpers = [];
+        // example {id:1592304983049, title: 'Deadpool', year: 2015}
+        const addHelper = (ev)=>{
+            ev.preventDefault();  //to stop the form submitting
+            let helper = {
+                id: Date.now(),
+                fname: document.getElementById('fname').value,
+                lname: document.getElementById('lname').value,
+                age: document.getElementById('age').value,
+                phone: document.getElementById('phone').value
+            }
+            helpers.push(helper);
+            document.forms[0].reset(); // to clear the form for the next entries
+            //document.querySelector('form').reset();
+
+            //for display purposes only
+            // console.warn('added' , {helpers} );
+            // let pre = document.querySelector('#msg pre');
+            // pre.textContent = '\n' + JSON.stringify(helpers, '\t', 3);
+
+            //saving to localStorage
+            localStorage.setItem('MyHelperList', JSON.stringify(helpers) );
+        }
+        document.addEventListener('DOMContentLoaded', ()=>{
+            document.getElementById('btn').addEventListener('click', addHelper);
+
+            //trying json server
+
+        });
+
+
+
+    </script> -->
+
+
+
+
+</body>
+
+</html>

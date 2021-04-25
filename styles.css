@@ -1,0 +1,38 @@
+body{
+  width: 100%;
+  height:auto;
+  justify-content:center;
+  align-content: center;
+  display: flex;
+}
+.main{
+  padding: 9%;
+  background-color: #ace7ff ;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-content: center;
+}
+.box{
+  display: flex;
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-head{
+  margin: auto;
+  font-weight: bold;
+  font-family: 'Lexend Deca';
+  text-align: center;
+  font-size: 40px;
+  padding: 5px;
+}
+.bf{
+  font-family:'Lexend Deca';
+  font-size:25px !important;
+}
